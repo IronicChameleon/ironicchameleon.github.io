@@ -2559,7 +2559,7 @@ textarea.form-control-lg {
   margin-right: 1rem;
 }
 
-.btn-check {
+.-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -3490,8 +3490,8 @@ textarea.form-control-lg {
 }
 
 .btn-xlg, .btn-group-xlg > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  font-size: 5.00rem;
   border-radius: 0.3rem;
 }
 
