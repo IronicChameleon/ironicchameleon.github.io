@@ -66,3 +66,8 @@ function expandImage(imageSrc) {
 function closeModal() {
     document.getElementById("imageModal").style.display = "none";
 }
+function openGalleryModal(projectId) {
+  // You can implement logic here to change images dynamically based on the projectId
+  // For now, the gallery content is hard-coded in the HTML
+}
+
