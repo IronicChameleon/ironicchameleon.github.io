@@ -80,8 +80,24 @@
                                 </div>
                             </div>
                         </div>
-                     </div>  
+                    <!-- From chat GPT -->
+                      <div class="project-section">
+                        <div class="project-image">
+                            <img src="project1-image.jpg" alt="Project 1" onclick="expandImage('project1-image.jpg')">
+                        </div>
+                        <div class="project-details">
+                            <h2 class="project-title">Project Title 1</h2>
+                            <p class="project-description">This is a description of the first project. It highlights the key aspects and outcomes of the project.</p>
+                            <a href="project1.pdf" class="download-button" download>Download PDF</a>
+                        </div>
+                    </div>
+                    <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="expandedImage">
+                    </div>
+                    <script src="scripts.js"></script>
                 </div>  
+                <!-- End of chat GTP section -->
             </section>
                      <!-- 3D Printing -->
                     <section class="page-section bg-primary" id="3DPrinting">
