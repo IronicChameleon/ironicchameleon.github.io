@@ -11506,6 +11506,10 @@ header.masthead h1, header.masthead .h1 {
     font-family: 'Merriweather', serif;
     margin: 0 0 20px 0;
 }
+.button-container {
+    text-align: center; /* Centers the content (button) */
+    margin-top: 10px;
+}
 
 .download-button {
     text-decoration: none;
@@ -11520,10 +11524,6 @@ header.masthead h1, header.masthead .h1 {
 .download-button:hover {
     background-color: white;
     color: black;
-}
-.button-container {
-    text-align: center; /* Centers the content (button) */
-    margin-top: 10px;
 }
 /* Modal styles */
 .modal {
