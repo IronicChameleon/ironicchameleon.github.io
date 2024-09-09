@@ -88,10 +88,21 @@
                         <div class="project-details">
                             <h2 class="text-center text-white mt-2">Bath Rocket Team GBDP - Payload Bay</h2>
                             <p class="text-white mt-4">This is a description of the first project. It highlights the key aspects and outcomes of the project.</p>
-                        </div>
-                    </div>
                             <a href="assets/GBDP BRT Rocket Payload Bay Technical report.pdf" class="download-button" download>See Full Technical Report</a>
                         </div>
+                        <!-- "See More" Button -->
+                        <button class="see-more-button" onclick="toggleMoreContent(this)">See More ▼</button>
+                        <!-- Hidden Content (Image Grid) -->
+                        <div class="more-content">
+                            <div class="image-grid">
+                                <img src="project1-image1.jpg" alt="Image 1">
+                                <img src="project1-image2.jpg" alt="Image 2">
+                                <img src="project1-image3.jpg" alt="Image 3">
+                                <!-- Add more images as needed -->
+                            </div>
+                            <!-- "See Less" Button -->
+                            <button class="see-less-button" onclick="toggleMoreContent(this)" style="display:none;">See Less ▲</button>
+                        </div>  
                       </div>
                     </div>
                     <script src="scripts.js"></script>
