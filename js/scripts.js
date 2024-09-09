@@ -55,5 +55,14 @@ window.addEventListener('DOMContentLoaded', event => {
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
     });
-
 });
+function expandImage(imageSrc) {
+    var modal = document.getElementById("imageModal");
+    var expandedImage = document.getElementById("expandedImage");
+    expandedImage.src = imageSrc;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
