@@ -71,9 +71,10 @@ function openGalleryModal(projectId) {
   // For now, the gallery content is hard-coded in the HTML
 }
 function toggleMoreContent(button) {
-    const moreContent = button.closest('.portfolio-item').querySelector('.more-content');
-    const seeMoreButton = button.closest('.portfolio-item').querySelector('.see-more-button');
-    const seeLessButton = button.closest('.portfolio-item').querySelector('.see-less-button');
+    const portfolioItem = button.closest('.portfolio-item');
+    const moreContent = portfolioItem.querySelector('.more-content');
+    const seeMoreButton = portfolioItem.querySelector('.see-more-button');
+    const seeLessButton = portfolioItem.querySelector('.see-less-button');
 
     if (moreContent.classList.contains('expanded')) {
         // Collapse the section
