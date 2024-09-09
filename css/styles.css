@@ -11525,6 +11525,31 @@ header.masthead h1, header.masthead .h1 {
     background-color: white;
     color: black;
 }
+/* Container to center the "See More" and "See Less" buttons */
+.see-more-container,
+.more-content {
+    text-align: center; /* Centers the buttons horizontally */
+    margin-top: 20px; /* Adds space above the button container */
+}
+
+/* Style for the "See More" and "See Less" buttons */
+.see-more-button,
+.see-less-button {
+    background-color: #333; /* Darker button background */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px; /* Additional space above each button */
+    display: inline-block; /* Ensures button is treated as inline-block for centering */
+}
+
+/* Hover effect for the buttons */
+.see-more-button:hover,
+.see-less-button:hover {
+    background-color: #555; /* Slight hover effect */
+}
 /* Modal styles */
 .modal {
     display: none;
