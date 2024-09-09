@@ -70,5 +70,22 @@ function openGalleryModal(projectId) {
   // You can implement logic here to change images dynamically based on the projectId
   // For now, the gallery content is hard-coded in the HTML
 }
+function toggleMoreContent(button) {
+    const moreContent = button.closest('.portfolio-item').querySelector('.more-content');
+    const seeMoreButton = button.closest('.portfolio-item').querySelector('.see-more-button');
+    const seeLessButton = button.closest('.portfolio-item').querySelector('.see-less-button');
+
+    if (moreContent.classList.contains('expanded')) {
+        // Collapse the section
+        moreContent.classList.remove('expanded');
+        seeMoreButton.style.display = 'block'; // Show "See More" button again
+        seeLessButton.style.display = 'none'; // Hide "See Less" button
+    } else {
+        // Expand the section
+        moreContent.classList.add('expanded');
+        seeMoreButton.style.display = 'none'; // Hide "See More" button
+        seeLessButton.style.display = 'block'; // Show "See Less" button
+    }
+}
 
 
