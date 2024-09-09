@@ -83,7 +83,7 @@
                     <!-- From chat GPT -->
                       <div class="engineering-project">
                         <div class="project-image">
-                            <img src="1.jpg" alt="Project 1" onclick="expandImage('1.jpg')">
+                            <img src="project1-image.jpg" alt="Project 1" onclick="openGalleryModal('project1')" data-bs-toggle="modal" data-bs-target="#galleryModal">
                         </div>
                         <div class="project-details">
                             <h2 class="project-title">Project Title 1</h2>
@@ -91,10 +91,41 @@
                             <a href="project1.pdf" class="download-button" download>Download PDF</a>
                         </div>
                     </div>
-                    <!-- For expanding images -->
-                    <div id="imageModal" class="modal">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <img class="modal-content" id="expandedImage">
+                    <!-- Modal with Bootstrap Carousel -->
+                    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="galleryModalLabel">Project Gallery</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <!-- Replace with your images -->
+                                <div class="carousel-item active">
+                                  <img src="project1-image1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="project1-image2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="project1-image3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <!-- Add more images as needed -->
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <script src="scripts.js"></script>
                 </div>  
