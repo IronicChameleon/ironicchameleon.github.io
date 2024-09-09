@@ -11471,13 +11471,72 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-.engineering-project {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-top: 5px solid #000;
-    background-color: #000;
+/* Project section styling */
+.portfolio-item {
+    background-color: black;
     color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Container for project details (text content and buttons) */
+.project-details {
+    margin-bottom: 20px; /* Adds space below the details section */
+}
+
+/* Container to center the "See More" and "See Less" buttons */
+.see-more-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button container */
+}
+
+/* Style for the "See More" and "See Less" buttons */
+.see-more-button,
+.see-less-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block; /* Inline-block to center the button */
+    margin-top: 10px;
+}
+
+.see-more-button:hover,
+.see-less-button:hover {
+    background-color: #555;
+}
+
+/* Initially hide the extra content with max-height */
+.more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 0;
+    text-align: center;
+}
+
+/* When the content is expanded */
+.more-content.expanded {
+    max-height: 1000px; /* Set maximum height for animation */
+    opacity: 1;
+}
+
+/* Grid for displaying images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .project-image {
@@ -11489,10 +11548,6 @@ header.masthead h1, header.masthead .h1 {
     width: 100%;
     cursor: pointer;
     border: 2px solid white;
-}
-
-.project-details {
-    flex: 2;
 }
 
 .project-title {
@@ -11524,25 +11579,6 @@ header.masthead h1, header.masthead .h1 {
 .download-button:hover {
     background-color: white;
     color: black;
-}
-/* Container to center the "See More" and "See Less" buttons */
-.see-more-container,
-.more-content {
-    text-align: center; /* Centers the buttons horizontally */
-    margin-top: 20px; /* Adds space above the button container */
-}
-
-/* Style for the "See More" and "See Less" buttons */
-.see-more-button,
-.see-less-button {
-    background-color: #333; /* Darker button background */
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px; /* Additional space above each button */
-    display: inline-block; /* Ensures button is treated as inline-block for centering */
 }
 
 /* Hover effect for the buttons */
