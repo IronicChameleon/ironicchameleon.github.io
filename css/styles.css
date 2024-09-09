@@ -11521,7 +11521,10 @@ header.masthead h1, header.masthead .h1 {
     background-color: white;
     color: black;
 }
-
+.button-container {
+    text-align: center; /* Centers the content (button) */
+    margin-top: 10px;
+}
 /* Modal styles */
 .modal {
     display: none;
