@@ -11565,6 +11565,7 @@ header.masthead h1, header.masthead .h1 {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
     margin: 0 0 10px 0;
+    color: #B8D8DE; /* Updated color */
 }
 
 /* Project description styling */
