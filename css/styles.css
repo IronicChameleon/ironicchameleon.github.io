@@ -11492,15 +11492,17 @@ header.masthead h1, header.masthead .h1 {
 /* Container for project details (text content and buttons) */
 .project-details {
     margin-bottom: 20px; /* Adds space below the details section */
+    flex: 1; /* Ensures it takes up the remaining space */
 }
 
-/* Style for the "See More" and "See Less" buttons */
+/* Container for "See More" and "See Less" Buttons */
 .see-more-container {
     text-align: center; /* Centers the buttons horizontally */
     margin-top: auto; /* Pushes the container to the bottom of the flex container */
+    padding: 10px 0; /* Adds space around the buttons */
 }
 
-/* Style for the buttons */
+/* Style for the "See More" and "See Less" buttons */
 .see-more-button,
 .see-less-button {
     background-color: #333;
@@ -11509,7 +11511,7 @@ header.masthead h1, header.masthead .h1 {
     padding: 8px 16px;
     cursor: pointer;
     font-size: 14px;
-    display: inline-block; /* Inline-block to center the button */
+    display: inline-block; /* Ensures the button is inline-block */
     margin-top: 10px;
 }
 
