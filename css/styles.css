@@ -11479,10 +11479,27 @@ header.masthead h1, header.masthead .h1 {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 20px; /* Space between image and text content */
+}
+
+/* Container for the project image */
+.project-image {
+    flex: 0 0 150px; /* Fixed width for the image container */
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 100%; /* Set the image to fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    border: 2px solid white;
+    object-fit: cover; /* Ensures the image covers the area */
 }
 
 /* Container for project details (text content and buttons) */
 .project-details {
+    flex: 1; /* Take remaining space */
     margin-bottom: 20px; /* Adds space below the details section */
 }
 
@@ -11539,17 +11556,6 @@ header.masthead h1, header.masthead .h1 {
     border-radius: 5px;
 }
 
-.project-image {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.project-image img {
-    width: 100%;
-    cursor: pointer;
-    border: 2px solid white;
-}
-
 .project-title {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
@@ -11561,6 +11567,7 @@ header.masthead h1, header.masthead .h1 {
     font-family: 'Merriweather', serif;
     margin: 0 0 20px 0;
 }
+
 .button-container {
     text-align: center; /* Centers the content (button) */
     margin-top: 10px;
@@ -11581,11 +11588,6 @@ header.masthead h1, header.masthead .h1 {
     color: black;
 }
 
-/* Hover effect for the buttons */
-.see-more-button:hover,
-.see-less-button:hover {
-    background-color: #555; /* Slight hover effect */
-}
 /* Modal styles */
 .modal {
     display: none;
