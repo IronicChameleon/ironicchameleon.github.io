@@ -11588,33 +11588,49 @@ header.masthead h1, header.masthead .h1 {
     color: black;
 }
 
-/* Modal styles */
+/* Existing Modal Styles (with additional properties) */
 .modal {
-    display: none;
+    display: none; /* Keeps it hidden by default */
     position: fixed;
-    z-index: 1;
+    z-index: 1000; /* Ensures it appears on top of other elements */
     padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background with some transparency */
+    overflow: hidden; /* Prevents scrolling outside the modal */
 }
 
+/* Existing Modal Content Styles (with additional properties) */
 .modal-content {
+    position: relative;
     margin: auto;
-    display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 1000px;
+    height: 80%;
+    overflow: hidden; /* Ensures the image stays within the modal */
+    display: flex; /* Centers the image horizontally and vertically */
+    justify-content: center;
+    align-items: center;
 }
 
+/* Existing Close Button Styles (with additional properties) */
 .close {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 35px;
-    color: #fff;
+    color: white;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1001;
+}
+
+/* Add Zoom and Pan styles for the Image */
+.modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: grab;
+    transition: transform 0.3s ease;
 }
