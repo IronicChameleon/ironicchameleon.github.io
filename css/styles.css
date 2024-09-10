@@ -11479,37 +11479,28 @@ header.masthead h1, header.masthead .h1 {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    display: flex; /* Use flexbox for side-by-side layout */
-    gap: 20px; /* Space between image and text content */
+    display: flex;
+    flex-direction: column; /* Ensures child elements stack vertically */
 }
 
-/* Container for the project image */
-.project-image {
-    flex: 0 0 150px; /* Fixed width for the image container */
-    margin-right: 20px;
-}
-
-.project-image img {
-    width: 100%; /* Set the image to fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
-    border: 2px solid white;
-    object-fit: cover; /* Ensures the image covers the area */
+/* Flex container for project content */
+.project-content {
+    display: flex;
+    flex: 1; /* Takes up available space */
 }
 
 /* Container for project details (text content and buttons) */
 .project-details {
-    flex: 1; /* Take remaining space */
     margin-bottom: 20px; /* Adds space below the details section */
 }
 
-/* Container to center the "See More" and "See Less" buttons */
+/* Style for the "See More" and "See Less" buttons */
 .see-more-container {
-    text-align: center; /* Centers the button horizontally */
-    margin-top: 20px; /* Adds space above the button container */
+    text-align: center; /* Centers the buttons horizontally */
+    margin-top: auto; /* Pushes the container to the bottom of the flex container */
 }
 
-/* Style for the "See More" and "See Less" buttons */
+/* Style for the buttons */
 .see-more-button,
 .see-less-button {
     background-color: #333;
@@ -11524,7 +11515,7 @@ header.masthead h1, header.masthead .h1 {
 
 .see-more-button:hover,
 .see-less-button:hover {
-    background-color: #555;
+    background-color: #555; /* Slight hover effect */
 }
 
 /* Initially hide the extra content with max-height */
@@ -11533,7 +11524,6 @@ header.masthead h1, header.masthead .h1 {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
     opacity: 0;
-    text-align: center;
 }
 
 /* When the content is expanded */
@@ -11556,23 +11546,33 @@ header.masthead h1, header.masthead .h1 {
     border-radius: 5px;
 }
 
+/* Image styling */
+.project-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/* Project title styling */
 .project-title {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
     margin: 0 0 10px 0;
 }
 
+/* Project description styling */
 .project-description {
     font-size: 14px;
     font-family: 'Merriweather', serif;
     margin: 0 0 20px 0;
 }
 
-.button-container {
-    text-align: center; /* Centers the content (button) */
-    margin-top: 10px;
-}
-
+/* Download button styling */
 .download-button {
     text-decoration: none;
     color: white;
@@ -11588,34 +11588,32 @@ header.masthead h1, header.masthead .h1 {
     color: black;
 }
 
-/* Existing Modal Styles (with additional properties) */
+/* Modal styles */
 .modal {
-    display: none; /* Keeps it hidden by default */
+    display: none; /* Hidden by default */
     position: fixed;
-    z-index: 1000; /* Ensures it appears on top of other elements */
+    z-index: 1000;
     padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9); /* Dark background with some transparency */
-    overflow: hidden; /* Prevents scrolling outside the modal */
+    overflow: hidden; /* Prevent scrolling outside the modal */
 }
 
-/* Existing Modal Content Styles (with additional properties) */
 .modal-content {
     position: relative;
     margin: auto;
     width: 80%;
     max-width: 1000px;
     height: 80%;
-    overflow: hidden; /* Ensures the image stays within the modal */
-    display: flex; /* Centers the image horizontally and vertically */
+    overflow: hidden; /* Ensure image stays within the modal */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Existing Close Button Styles (with additional properties) */
 .close {
     position: absolute;
     top: 20px;
@@ -11627,10 +11625,11 @@ header.masthead h1, header.masthead .h1 {
     z-index: 1001;
 }
 
-/* Add Zoom and Pan styles for the Image */
+/* Image styling for zoom and pan */
 .modal-content img {
     max-width: 100%;
     max-height: 100%;
     cursor: grab;
     transition: transform 0.3s ease;
 }
+
