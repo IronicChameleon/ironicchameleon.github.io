@@ -88,5 +88,62 @@ function toggleMoreContent(button) {
         seeLessButton.style.display = 'block'; // Show "See Less" button
     }
 }
+// JavaScript to handle opening and closing the modal
+const modal = document.getElementById('imageModal');
+const fullSizeImage = document.getElementById('fullSizeImage');
+let scale = 1; // Initial scale for zoom
+let isDragging = false; // Flag for dragging state
+let startX, startY, translateX = 0, translateY = 0;
+
+// Function to open the modal and display the full-size image
+function openImageModal(src) {
+    fullSizeImage.src = src; // Set the source to the full-size image path
+    modal.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+    modal.style.display = 'none';
+    fullSizeImage.style.transform = 'translate(0, 0) scale(1)'; // Reset transform
+    scale = 1;
+    translateX = 0;
+    translateY = 0;
+}
+
+// Function to handle mouse wheel zoom
+fullSizeImage.addEventListener('wheel', function (event) {
+    event.preventDefault(); // Prevent page scroll
+    scale += event.deltaY * -0.01; // Adjust scale by wheel movement
+    scale = Math.min(Math.max(0.5, scale), 3); // Set zoom range between 0.5 and 3
+    fullSizeImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+});
+
+// Function to handle drag and pan
+fullSizeImage.addEventListener('mousedown', function (event) {
+    isDragging = true;
+    startX = event.clientX - translateX;
+    startY = event.clientY - translateY;
+    fullSizeImage.style.cursor = 'grabbing'; // Change cursor while dragging
+});
+
+document.addEventListener('mousemove', function (event) {
+    if (isDragging) {
+        translateX = event.clientX - startX;
+        translateY = event.clientY - startY;
+        fullSizeImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
+});
+
+document.addEventListener('mouseup', function () {
+    isDragging = false;
+    fullSizeImage.style.cursor = 'grab'; // Reset cursor when not dragging
+});
+
+// Event listener to close the modal when clicking outside the image
+modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
 
 
