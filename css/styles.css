@@ -11493,6 +11493,7 @@ header.masthead h1, header.masthead .h1 {
 .project-details {
     margin-bottom: 20px; /* Adds space below the details section */
     flex: 1; /* Ensures it takes up the remaining space */
+    text-align: center;
 }
 /* Container for the download button */
 .button-container {
@@ -11587,6 +11588,7 @@ header.masthead h1, header.masthead .h1 {
     background-color: #333;
     padding: 10px 20px;
     border: 2px solid white;
+    margin: auto;
     font-family: 'Merriweather Sans', sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
