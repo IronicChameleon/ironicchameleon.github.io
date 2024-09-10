@@ -90,7 +90,7 @@
                             <div class="project-content">
                                 <!-- Left Image -->
                                 <div class="project-image">
-                                    <img src="assets/img/portfolio/thumbnails/PB_1.png" alt="Project 1" onclick="openGalleryModal('project1')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <img src="assets/img/portfolio/thumbnails/PB_1.png" alt="Project 1" onclick="openImageModal('assets/fullsize/folder/fullsize_PB_1.png')">
                                 </div>
                                 <!-- Right Side Content: Title, Description, and Buttons -->
                                 <div class="project-details">
@@ -108,13 +108,21 @@
                             <!-- Hidden Content (Image Grid) -->
                             <div class="more-content">
                                 <div class="image-grid">
-                                    <img src="assets/img/portfolio/thumbnails/PB_2.png" alt="Image 1">
-                                    <img src="assets/img/portfolio/thumbnails/PB_3.png" alt="Image 2">
-                                    <img src="assets/img/portfolio/thumbnails/PB_4.png" alt="Image 3">
+                                    <img src="assets/img/portfolio/thumbnails/PB_2.png" alt="Image 1" onclick="openImageModal('assets/fullsize/folder/fullsize_PB_2.png')">
+                                    <img src="assets/img/portfolio/thumbnails/PB_3.png" alt="Image 2" onclick="openImageModal('assets/fullsize/folder/fullsize_PB_3.png')">
+                                    <img src="assets/img/portfolio/thumbnails/PB_4.png" alt="Image 3" onclick="openImageModal('assets/fullsize/folder/fullsize_PB_4.png')">
                                     <!-- Add more images as needed -->
                                 </div>
                                 <!-- "See Less" Button -->
                                 <button class="see-less-button" onclick="toggleMoreContent(this)" style="display:none;">See Less ▲</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Fullsize Image Modal -->
+                        <div id="imageModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                                <img id="fullSizeImage" src="" alt="Full Size Image">
                             </div>
                         </div>
 
