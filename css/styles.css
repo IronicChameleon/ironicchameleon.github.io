@@ -11494,6 +11494,11 @@ header.masthead h1, header.masthead .h1 {
     margin-bottom: 20px; /* Adds space below the details section */
     flex: 1; /* Ensures it takes up the remaining space */
 }
+/* Container for the download button */
+.button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button */
+}
 
 /* Container for "See More" and "See Less" Buttons */
 .see-more-container {
