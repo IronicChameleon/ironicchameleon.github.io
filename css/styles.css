@@ -11591,7 +11591,7 @@ header.masthead h1, header.masthead .h1 {
 
 .project-image img {
     width: auto;
-    height: 400px;
+    height: 350px;
     cursor: pointer;
     border: 2px solid white;
 }
@@ -11605,7 +11605,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .project-description {
-    font-size: 10px !important; /* Forces the font size to 8px */
+    font-size: 12px !important; /* Forces the font size to 8px */
     font-family: 'Merriweather', serif;
     margin: 0 0 20px 0;
     text-align: justify;
