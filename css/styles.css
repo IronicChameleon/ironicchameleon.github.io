@@ -11578,7 +11578,9 @@ header.masthead h1, header.masthead .h1 {
     color: #B8D8DE; /* Light blue color for the caption text */
     word-wrap: break-word; /* Ensures text wraps if it exceeds container width */
     max-width: 150px; /* Ensures the caption width does not exceed the image width */
+    line-height: 1.2; /* Adjusts line height for better readability */
 }
+
 
 /* Image styling */
 .project-image {
