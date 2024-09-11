@@ -11563,7 +11563,8 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .project-image img {
-    width: 150px;
+    width: auto;
+    height: 300px;
     cursor: pointer;
     border: 2px solid white;
 }
