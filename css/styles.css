@@ -11545,12 +11545,19 @@ header.masthead h1, header.masthead .h1 {
 }
 
 /* Grid for displaying images */
+/* .image-grid { */ 
+ /*    display: flex; /* Use flexbox instead of grid */*/ 
+  /*   flex-wrap: wrap; /* Allow images to wrap onto new lines */*/
+  /*   gap: 10px; /* Space between images */*/
+  /*   margin-top: 10px;*/
+   /*  justify-content: center; /* Center align images horizontally */*/
+  
+  /* Grid for displaying images */
 .image-grid {
-    display: flex; /* Use flexbox instead of grid */
-    flex-wrap: wrap; /* Allow images to wrap onto new lines */
-    gap: 10px; /* Space between images */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px;
     margin-top: 10px;
-    justify-content: center; /* Center align images horizontally */
 }
 
 .image-grid img {
@@ -11559,7 +11566,30 @@ header.masthead h1, header.masthead .h1 {
     border-radius: 5px;
     display: block; /* Ensures proper alignment */
 }
+/* Container for each image and its caption */
+.image-container {
+    text-align: center; /* Center-aligns the caption text */
+    max-width: 150px; /* Ensures the container does not exceed image width */
+    margin: 0 auto; /* Centers the image-container within the grid */
+}
 
+/* Style for the images */
+.image-container img {
+    height: 150px; /* Set a fixed height for the images */
+    width: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Centers the image within its container */
+}
+
+/* Style for the captions */
+.image-caption {
+    margin-top: 5px; /* Adds some spacing above the caption */
+    font-size: 12px; /* Smaller font size for captions */
+    color: #B8D8DE; /* Light blue color for the caption text */
+    word-wrap: break-word; /* Ensures text wraps if it exceeds container width */
+    max-width: 100%; /* Ensures the caption width does not exceed the image width */
+}
 
 /* Image styling */
 .project-image {
@@ -11570,7 +11600,7 @@ header.masthead h1, header.masthead .h1 {
 
 .project-image img {
     width: auto;
-    height: 300px;
+    height: 600px;
     cursor: pointer;
     border: 2px solid white;
 }
