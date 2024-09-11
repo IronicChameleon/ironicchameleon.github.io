@@ -11545,27 +11545,16 @@ header.masthead h1, header.masthead .h1 {
 }
 
 /* Grid for displaying images */
-/* .image-grid { */ 
- /*    display: flex; /* Use flexbox instead of grid */*/ 
-  /*   flex-wrap: wrap; /* Allow images to wrap onto new lines */*/
-  /*   gap: 10px; /* Space between images */*/
-  /*   margin-top: 10px;*/
-   /*  justify-content: center; /* Center align images horizontally */*/
-  
- /* Grid for displaying images */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid with a minimum width of 150px */
-    gap: 10px; /* Space between the grid items */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between grid items */
     margin-top: 10px;
+    width: 100%; /* Ensures the grid container takes the full width */
+    max-width: 100%; /* Prevents the grid from exceeding the parent width */
+    justify-items: center; /* Centers items within each grid cell */
 }
 
-.image-grid img {
-    height: 150px; /* Set the desired fixed height for all images */
-    width: auto; /* Width adjusts automatically to maintain aspect ratio */
-    border-radius: 5px;
-    display: block; /* Ensures proper alignment */
-}
 /* Container for each image and its caption */
 .image-container {
     text-align: center; /* Center-aligns the caption text */
@@ -11579,6 +11568,7 @@ header.masthead h1, header.masthead .h1 {
     border-radius: 5px;
     display: block; /* Ensures proper alignment */
     margin: 0 auto; /* Centers the image within its container */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the fixed height */
 }
 
 /* Style for the captions */
@@ -11588,7 +11578,6 @@ header.masthead h1, header.masthead .h1 {
     color: #B8D8DE; /* Light blue color for the caption text */
     word-wrap: break-word; /* Ensures text wraps if it exceeds container width */
     max-width: 150px; /* Ensures the caption width does not exceed the image width */
-    display: inline-block; /* Ensures captions do not take up more space than their content */
 }
 
 /* Image styling */
