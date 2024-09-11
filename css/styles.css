@@ -11547,10 +11547,14 @@ header.masthead h1, header.masthead .h1 {
     margin-top: 10px;
 }
 
+
 .image-grid img {
-    width: 100%;
-    height: auto;
+    height: 150px; /* Set the desired fixed height for all images */
+    width: auto; /* Width adjusts automatically to maintain aspect ratio */
     border-radius: 5px;
+    margin: 5px; /* Optional: Adds space between images */
+    display: block; /* Ensures proper alignment */
+
 }
 
 /* Image styling */
