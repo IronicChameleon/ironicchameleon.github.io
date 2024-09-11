@@ -11483,10 +11483,15 @@ header.masthead h1, header.masthead .h1 {
     flex-direction: column; /* Ensures child elements stack vertically */
 }
 
-/* Flex container for project content */
+  /* Container for image and text */
 .project-content {
-    display: flex;
-    flex: 1; /* Takes up available space */
+    display: flex; /* Aligns image and text side by side */
+    gap: 20px; /* Adds space between image and text */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    width: 100%; /* Ensures the flex container takes the full width */
+  /*    flex: 1; /* Takes up available space */ */
+
+}
 }
 
 /* Container for project details (text content and buttons) */
@@ -11560,6 +11565,7 @@ header.masthead h1, header.masthead .h1 {
 .project-image {
     flex: 1;
     margin-right: 20px;
+    max-width: 100%; /* Ensures image does not exceed container size */
 }
 
 .project-image img {
