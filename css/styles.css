@@ -11604,7 +11604,7 @@ header.masthead h1, header.masthead .h1 {
 
 .project-image img {
     width: auto;
-    height: 600px;
+    height: 450px;
     cursor: pointer;
     border: 2px solid white;
 }
@@ -11612,14 +11612,14 @@ header.masthead h1, header.masthead .h1 {
 /* Project title styling */
 .project-title {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     margin: 0 0 10px 0;
     color: #B8D8DE; /* Updated color */
 }
 
 /* Project description styling */
 .project-description {
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Merriweather', serif;
     margin: 0 0 20px 0;
     text-align: justify;
