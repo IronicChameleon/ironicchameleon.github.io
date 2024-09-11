@@ -11541,21 +11541,20 @@ header.masthead h1, header.masthead .h1 {
 
 /* Grid for displaying images */
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
-    gap: 10px;
+    display: flex; /* Use flexbox instead of grid */
+    flex-wrap: wrap; /* Allow images to wrap onto new lines */
+    gap: 10px; /* Space between images */
     margin-top: 10px;
+    justify-content: center; /* Center align images horizontally */
 }
-
 
 .image-grid img {
     height: 150px; /* Set the desired fixed height for all images */
     width: auto; /* Width adjusts automatically to maintain aspect ratio */
     border-radius: 5px;
-    margin: 5px; /* Optional: Adds space between images */
     display: block; /* Ensures proper alignment */
-
 }
+
 
 /* Image styling */
 .project-image {
