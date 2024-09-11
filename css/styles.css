@@ -11602,9 +11602,8 @@ header.masthead h1, header.masthead .h1 {
     color: #B8D8DE; /* Updated color */
 }
 
-/* Project description styling */
 .project-description {
-    font-size: 8px;
+    font-size: 8px !important; /* Forces the font size to 8px */
     font-family: 'Merriweather', serif;
     margin: 0 0 20px 0;
     text-align: justify;
