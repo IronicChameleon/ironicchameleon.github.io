@@ -11508,7 +11508,7 @@ header.masthead h1, header.masthead .h1 {
 /* Container for "See More" and "See Less" Buttons */
 .see-more-container {
     text-align: center; /* Centers the buttons horizontally */
-    margin-top: auto; /* Pushes the container to the bottom of the flex container */
+    margin-top: 10px; /* Adds space above the buttons */
     padding: 10px 0; /* Adds space around the buttons */
 }
 
