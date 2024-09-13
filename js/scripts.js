@@ -145,23 +145,3 @@ modal.addEventListener('click', function (event) {
         closeModal();
     }
 });
-<script>
-    function openVideoModal() {
-        const modal = document.getElementById('videoModal');
-        const video = document.getElementById('videoPlayer');
-
-        modal.style.display = 'flex'; // Show modal
-        video.load(); // Load video
-    }
-
-    function closeVideoModal() {
-        const modal = document.getElementById('videoModal');
-        const video = document.getElementById('videoPlayer');
-
-        modal.style.display = 'none'; // Hide modal
-        video.pause(); // Pause the video
-        video.currentTime = 0; // Reset to start
-    }
-</script>
-
-
