@@ -11550,9 +11550,9 @@ header.masthead h1, header.masthead .h1 {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
     gap: 10px; /* Space between grid items */
     margin-top: 10px;
+    justify-content: center; /* Centers the grid items */
     width: 100%; /* Ensures the grid container takes the full width */
     max-width: 100%; /* Prevents the grid from exceeding the parent width */
-    justify-items: center; /* Centers items within each grid cell */
 }
 
 /* Container for each image and its caption */
@@ -11568,7 +11568,7 @@ header.masthead h1, header.masthead .h1 {
     border-radius: 5px;
     display: block; /* Ensures proper alignment */
     margin: 0 auto; /* Centers the image within its container */
-    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the fixed height */
+    object-fit: contain; /* Ensures the image maintains aspect ratio within the fixed height */
 }
 
 /* Style for the captions */
@@ -11580,7 +11580,6 @@ header.masthead h1, header.masthead .h1 {
     max-width: 150px; /* Ensures the caption width does not exceed the image width */
     line-height: 1.2; /* Adjusts line height for better readability */
 }
-
 
 /* Image styling */
 .project-image {
