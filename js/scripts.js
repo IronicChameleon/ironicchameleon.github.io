@@ -145,3 +145,43 @@ modal.addEventListener('click', function (event) {
         closeModal();
     }
 });
+
+// Function to open the video modal
+function openVideoModal(videoSrc) {
+    var modal = document.getElementById('videoModal');
+    var videoPlayer = document.getElementById('videoPlayer');
+    var playOverlay = document.getElementById('playOverlay');
+
+    // Set video source and show modal
+    videoPlayer.querySelector('source').src = videoSrc;
+    videoPlayer.load();
+    modal.style.display = 'flex';
+    playOverlay.style.display = 'block';
+}
+
+// Function to close the video modal
+function closeVideoModal() {
+    var modal = document.getElementById('videoModal');
+    var videoPlayer = document.getElementById('videoPlayer');
+    
+    // Stop video playback and hide modal
+    videoPlayer.pause();
+    modal.style.display = 'none';
+}
+
+// Function to play video on play button click
+function playVideo() {
+    var videoPlayer = document.getElementById('videoPlayer');
+    var playOverlay = document.getElementById('playOverlay');
+
+    videoPlayer.play();
+    playOverlay.style.display = 'none'; // Hide overlay play button
+}
+
+// Close modal if background is clicked
+window.onclick = function(event) {
+    var modal = document.getElementById('videoModal');
+    if (event.target == modal) {
+        closeVideoModal();
+    }
+};
