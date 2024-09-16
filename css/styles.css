@@ -11570,6 +11570,7 @@ header.masthead h1, header.masthead .h1 {
     display: block; /* Ensures proper alignment */
     margin: 0 auto; /* Centers the image within its container */
     object-fit: cover; /* Ensures the image maintains aspect ratio while filling the fixed height */
+    cursor: pointer;
 }
 
 /* Style for the captions */
