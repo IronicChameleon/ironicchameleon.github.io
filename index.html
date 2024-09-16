@@ -122,8 +122,8 @@ For a full explaination of the project as well as detailed drawings, design proc
                                 <div class="image-grid">
                                     <!-- Image with Caption -->
                                     <div class="image-container">
-                                        <img src="assets/img/portfolio/thumbnails/Video thumbnail.png" alt="Image 1" onclick="openImageModal('assets/img/portfolio/fullsize/Payload Bay.avi')">
-                                        <div class="image-caption">Payload Bay in action(VIDEO)</div>
+                                        <img src="assets/img/portfolio/thumbnails/Video thumbnail.png" alt="Image 1" onclick="openVideoModal('assets/Just Payload Video - Made with Clipchamp.mp4')">
+                                        <div class="image-caption">Payload Bay in action (VIDEO)</div>
                                     </div>
                             
                                     <div class="image-container">
@@ -192,6 +192,19 @@ For a full explaination of the project as well as detailed drawings, design proc
                             <div class="modal-content">
                                 <img id="fullSizeImage" src="" alt="Full Size Image">
                                 <!-- Don't knwo how to actually add in the full sized image each click should show -->
+                            </div>
+                        </div>
+                        <!-- Video Modal -->
+                        <div id="videoModal" class="video-modal">
+                            <div class="video-modal-content">
+                                <span class="close" onclick="closeVideoModal()">&times;</span>
+                                <video id="videoPlayer" controls loop>
+                                    <source src="" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="overlay-play-button" id="playOverlay" onclick="playVideo()">
+                                    &#9658; <!-- Play Icon -->
+                                </div>
                             </div>
                         </div>
 
