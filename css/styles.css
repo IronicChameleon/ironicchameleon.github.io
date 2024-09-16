@@ -11551,7 +11551,7 @@ header.masthead h1, header.masthead .h1 {
     gap: 10px; /* Space between grid items */
     margin-top: 10px;
     width: 100%; /* Ensures the grid container takes the full width */
-    max-width: 100%; /* Prevents the grid from exceeding the parent width */
+    /* max-width: 100%; /* Prevents the grid from exceeding the parent width */
     justify-items: center; /* Centers items within each grid cell */
 }
 
@@ -11565,6 +11565,7 @@ header.masthead h1, header.masthead .h1 {
 .image-container img {
     height: 150px; /* Fixed height for all images */
     width: auto; /* Width adjusts automatically to maintain aspect ratio */
+    max-width: 100%; /* Prevent images from overflowing the grid cell */
     border-radius: 5px;
     display: block; /* Ensures proper alignment */
     margin: 0 auto; /* Centers the image within its container */
