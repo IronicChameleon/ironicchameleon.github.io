@@ -86,7 +86,7 @@ on<!DOCTYPE html>
                     <!-- Chunk 3 -->
                       <!-- From chat GPT -->
                       <!-- To do: Make 'project title' the same blue as the 'personal statements' button, I have tried to do this in the CSS for .project-title but have been unsuccessful -->
-                        <!-- Project Section -->
+                        <!-- Project Section 1-->
                         <div class="portfolio-item">
                             <!-- Container for Flexbox Layout -->
                             <div class="project-content">
@@ -190,6 +190,65 @@ For a full explaination of the project as well as detailed drawings, design proc
                                 </div>
                             </div>
 
+                        <!-- Project Section 2-->
+                        <div class="portfolio-item">
+                            <!-- Container for Flexbox Layout -->
+                            <div class="project-content">
+                                <!-- Left Image -->
+                                <div class="project-image"> 
+                                    <img src="assets/img/portfolio/thumbnails/PB_sq.png" alt="Project 1" onclick="openImageModal('assets/img/portfolio/PB_sq.png')">
+                                </div>
+                                <!-- Right Side Content: Title, Description, and Buttons -->
+                                <div class="project-details">
+                                    <h2 class="project-title">Title <br> </h2>
+                                    <p class="project-description">Description.................................
+</p>
+                                    <!-- Download Button -->
+                                    <div class="center-wrapper">
+                                        <a href="assets/GBDP BRT Rocket Payload Bay Technical report.pdf" class="download-button" download>See Full Technical Report</a>
+                                    </div>
+                                </div>
+                                </div>
+                               <!-- Container for "See More" and "See Less" Buttons -->
+                                <div class="see-more-container">
+                                    <center>
+                                    <button class="see-more-button" onclick="toggleMoreContent(this)">See More ▼</button>
+                                    <button class="see-less-button" onclick="toggleMoreContent(this)" style="display:none;">See Less ▲</button>
+                                    </center>
+                                    
+                                    <!-- Currently can't see my 'See more' button -->
+                            </div>
+                        
+                            <!-- Hidden Content (Image Grid) -->
+                            <div class="more-content">
+                                <div class="image-grid">
+                                    <!-- Image with Caption -->
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/Video thumbnail 2.png" alt="Image 1" onclick="openVideoModal('assets/Just Payload Video - Made with Clipchamp.mp4')">
+                                        <div class="image-caption">Payload Bay in action (VIDEO)</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/Video thumbnail 3.png" alt="Image 2" onclick="openVideoModal('assets/Rocket Video 1.mp4')">
+                                        <div class="image-caption">Rocket in action (VIDEO)</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/PB_closed.png" alt="Image 3" onclick="openImageModal('assets/img/portfolio/fullsize/PB_closed.png')">
+                                        <div class="image-caption">Payload Bay Closed</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/PB_half_section.png" alt="Image 4" onclick="openImageModal('assets/img/portfolio/fullsize/PB_half_section.png')">
+                                        <div class="image-caption">Half Section View</div>
+                                    </div>
+                            
+                                    <!-- Continue with other images as needed -->
+                                </div>
+                            </div>
+
+
+                            
                         </div>
                         <!-- Fullsize Image Modal -->
                         <div id="imageModal" class="modal">
