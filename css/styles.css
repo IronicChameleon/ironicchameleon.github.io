@@ -11693,8 +11693,9 @@ header.masthead h1, header.masthead .h1 {
 .video-modal-content {
     position: relative;
     background-color: transparent;
-    width: 80%;
-    max-width: 900px;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px; /* Add some padding around the video */
     margin: auto;
 }
 
