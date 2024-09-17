@@ -1,4 +1,4 @@
-<!-- CURRENT PROBLEMS: Make video play, Images in image grid are overlapping, re-write descriptions for all sections -->
+<!-- CURRENT PROBLEMS: re-write descriptions for all sections -->
 on<!DOCTYPE html>
 <html lang="en">
     <head>
@@ -302,7 +302,58 @@ For a full explaination of the project as well as detailed drawings, design proc
                             </div>
 
 
+                        <!-- Project Section 3-->
+                        <div class="portfolio-item">
+                            <!-- Container for Flexbox Layout -->
+                            <div class="project-content">
+                                <!-- Left Image -->
+                                <div class="project-image"> 
+                                    <img src="assets/img/portfolio/thumbnails/HE-3.5.bmp" alt="Project 1" onclick="openImageModal('assets/img/portfolio/fullsize/HE-3.5.bmp')">
+                                </div>
+                                <!-- Right Side Content: Title, Description, and Buttons -->
+                                <div class="project-details">
+                                    <h2 class="project-title">Public Transport Accessibility Design Project <br> </h2>
+                                    <p class="project-description">In this group project, we were tasked with designing a new product that would improve accessibility for elderly people on public transport. Our group chose to design a new method of storage on busses. This was based on an investigative paper from Loughborough University which researched the current issues elderly people face the most when using public transport. Some important parts of the paper highlighted the need for more control and free movement on busses and stated, ‘older adults struggle to move about on public transport as their path is often blocked by obstacles on the floor'. <br><br>
+To overcome this storage issue, we designed a box that would be stored underneath the seat with a controller on the arm rest. When the user needs to store items (such as luggage) during travel, the box is moved by actuators and levers out from underneath the seat into the aisle and then up to become level with the arm rest. This solution clears the aisle of luggage and doesn’t require any strain to be put on the user meaning it is accessible to all. <br><br></p>
+                                    <!-- Download Button -->
+                                    <div class="center-wrapper">
+                                        <a href="assets/Machine Design G39 - Heat Exchanger Assembly.pdf" class="download-button" download>See Full Project Documentation</a>
+                                    </div>
+                                </div>
+                                </div>
+                               <!-- Container for "See More" and "See Less" Buttons -->
+                                <div class="see-more-container">
+                                    <center>
+                                    <button class="see-more-button" onclick="toggleMoreContent(this)">See More ▼</button>
+                                    <button class="see-less-button" onclick="toggleMoreContent(this)" style="display:none;">See Less ▲</button>
+                                    </center>
+                                    
+                            </div>
+                        
+                            <!-- Hidden Content (Image Grid) -->
+                            <div class="more-content">
+                                <div class="image-grid">
+                                    <!-- Image with Caption -->
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/HE-1.bmp" alt="Image 1" onclick="openImageModal('assets/img/portfolio/fullsize/HE-1.bmp')">
+                                        <div class="image-caption">Machine View 1</div>
+                                    </div>
                             
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/HE-5.bmp" alt="Image 2" onclick="openImageModal('assets/img/portfolio/fullsize/HE-5.bmp')">
+                                        <div class="image-caption">Machine View 2</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/HE-17.png" alt="Image 3" onclick="openImageModal('assets/img/portfolio/fullsize/HE-17.png')">
+                                        <div class="image-caption">Machine Wire View</div>
+                                    </div>
+                            
+                                    <!-- Continue with other images as needed -->
+                                </div>
+                            </div>
+
+  
                         </div>
                         <!-- Fullsize Image Modal -->
                         <div id="imageModal" class="modal">
