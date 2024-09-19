@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #B8D8DE;
+  --bs-primary: #407F81;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -7816,7 +7816,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #407F81 !important;
 }
 
 .bg-secondary {
@@ -11306,7 +11306,8 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .text-white-75 {
@@ -11456,7 +11457,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(64, 127, 129, 0.7);
   transition: opacity 0.25s ease;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
@@ -11473,7 +11474,7 @@ header.masthead h1, header.masthead .h1 {
 }
 /* Project section styling */
 .portfolio-item {
-    background-color: black;
+    background-color: #1b1c1c;
     color: white;
     padding: 20px;
     margin-bottom: 30px;
