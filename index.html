@@ -89,6 +89,144 @@ This is my portfolio, a collection of projects and work I have completed so far.
                     <!-- Chunk 3 -->
                       <!-- From chat GPT -->
                       <!-- To do: Make 'project title' the same blue as the 'personal statements' button, I have tried to do this in the CSS for .project-title but have been unsuccessful -->
+                        <!-- Project Section 0-->
+                        <div class="portfolio-item">
+                            <!-- Container for Flexbox Layout -->
+                            <div class="project-content">
+                                <!-- Left Image -->
+                                <div class="project-image"> 
+                                    <img src="assets/img/portfolio/thumbnails/FYP img1.jpg" alt="Project 0" onclick="openImageModal('assets/img/portfolio/fullsize/FYP img1.jpg')">
+                                </div>
+                                <!-- Right Side Content: Title, Description, and Buttons -->
+                                <div class="project-details">
+                                    <h2 class="project-title">Final Year Project <br> </h2>
+                                    <p class="project-description">I designed a Payload Bay for a large model rocket capable of ejecting a 1 kg payload 2 metres away from the rocket at an altitude of 3000 metres. I designed a sprung hinged bay door system controlled by a solenoid to enclose the payload in the rocket during launch; a payload ejection system to eject the payload once the door had opened using a bed of compressed springs which the payload would sit upon; and a latching system driven by a solenoid to hold the bed in its compressed state during launch, and release to allow the payload to be ejected. In order to design these systems to various constraints (such as weight, size, and safety), I used CAD, FEA, and static and dynamic mechanics, among other skills. I also did a small amount of prototyping using 3D printing for visualisation purposes. <br><br>
+This group business design project (GBDP) was completed in the final semester of my penultimate year at University and entailed a group of 20 students designing a large (3 metre) model rocket to fly up to 3000m altitude with competition standards and regulations (for the annual EuRoC competition). To do this we divided the rocket into sections and assigned each section to a person or group, I was solely responsible for the Payload Bay of the rocket. Since our payload was to be ejected, this section involved three main movements: Bay Doors opening, Payload released from restraints, Payload ejected. <br><br>
+For a full explaination of the project as well as detailed drawings, design process breakdown, and calculations, please download to full technical report using the button below.
+</p>
+                                    <!-- Download Button -->
+                                    <div class="center-wrapper">
+                                        <a href="assets/GBDP BRT Rocket Payload Bay Technical report.pdf" class="download-button" download>See Full Technical Report</a>
+                                    </div>
+                                </div>
+                                </div>
+                               <!-- Container for "See More" and "See Less" Buttons -->
+                                <div class="see-more-container">
+                                    <center>
+                                    <button class="see-more-button" onclick="toggleMoreContent(this)">See More ▼</button>
+                                    <button class="see-less-button" onclick="toggleMoreContent(this)" style="display:none;">See Less ▲</button>
+                                    </center>
+                                    
+                            </div>
+                        
+                            <!-- Hidden Content (Image Grid) -->
+                            <div class="more-content">
+                                <div class="image-grid">
+                                    <!-- Image with Caption -->
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP img1.jpg" alt="Image 1" onclick="openImageModal('assets/img/portfolio/fullsize/FYP img1.jpg')">
+                                        <div class="image-caption">Final Circular Saw Prototype Img1</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP img2.jpg" alt="Image 2" onclick="openImageModal('assets/img/portfolio/fullsize/FYP img2.jpg')">
+                                        <div class="image-caption">Final Circular Saw Prototype Side</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP img3.jpg" alt="Image 3" onclick="openImageModal('assets/img/portfolio/fullsize/FYP img3.jpg')">
+                                        <div class="image-caption">Final Circular Saw Prototype Top</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP img4.jpg" alt="Image 4" onclick="openImageModal('assets/img/portfolio/fullsize/FYP img4.jpg')">
+                                        <div class="image-caption">Final Circular Saw Prototype Front</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP img5.jpg" alt="Image 5" onclick="openImageModal('assets/img/portfolio/fullsize/FYP img5.jpg')">
+                                        <div class="image-caption">Final Circular Saw Prototype Back</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/PB_bed.png" alt="Image 6" onclick="openImageModal('assets/img/portfolio/fullsize/PB_bed.png')">
+                                        <div class="image-caption">Aluminium/Titanuim Bed</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP test handle img1.jpg" alt="Image 7" onclick="openImageModal('assets/img/portfolio/fullsize/FYP test handle img1.jpg')">
+                                        <div class="image-caption">Test handle without textures</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP test handle img2.jpg" alt="Image 8" onclick="openImageModal('assets/img/portfolio/fullsize/FYP test handle img2.jpg')">
+                                        <div class="image-caption">Test handle with textures</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP Handles2.bmp" alt="Image 9" onclick="openImageModal('assets/img/portfolio/fullsize/FYP Handles2.bmp')">
+                                        <div class="image-caption">Test piece handle textures RENDER</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP test pieces img1.jpg" alt="Image 10" onclick="openImageModal('assets/img/portfolio/fullsize/FYP test pieces img1.jpg')">
+                                        <div class="image-caption">Test piece handle textures</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP test pieces img2.jpg" alt="Image 11" onclick="openImageModal('assets/img/portfolio/fullsize/FYP test pieces img2.jpg')">
+                                        <div class="image-caption">Texture differentiation test pieces</div>
+                                    </div>
+                            
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP testing img1.jpg" alt="Image 12" onclick="openImageModal('assets/img/portfolio/fullsize/FYP testing img1.jpg')">
+                                        <div class="image-caption">Testing example image 1</div>
+                                    </div>
+
+                                     <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP testing img2.jpg" alt="Image 13" onclick="openImageModal('assets/img/portfolio/fullsize/FYP testing img2.jpg')">
+                                        <div class="image-caption">Testing example image 2</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP testing img3.jpg" alt="Image 14" onclick="openImageModal('assets/img/portfolio/fullsize/FYP testing img3.jpg')">
+                                        <div class="image-caption">Testing example image 3</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP testing img4.jpg" alt="Image 15" onclick="openImageModal('assets/img/portfolio/fullsize/FYP testing img4.jpg')">
+                                        <div class="image-caption">Testing example image 4</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP white img1.jpg" alt="Image 16" onclick="openImageModal('assets/img/portfolio/fullsize/FYP white img1.jpg')">
+                                        <div class="image-caption">Prototype in White image 1</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP white img2.jpg" alt="Image 17" onclick="openImageModal('assets/img/portfolio/fullsize/FYP white img2.jpg')">
+                                        <div class="image-caption">Prototype in White imgae 2</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP OG saw1.jpg" alt="Image 18" onclick="openImageModal('assets/img/portfolio/fullsize/FYP OG saw1.jpg')">
+                                        <div class="image-caption">Original Circular saw to be adapted image 1</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP OG saw2.jpg" alt="Image 19" onclick="openImageModal('assets/img/portfolio/fullsize/FYP OG saw2.jpg')">
+                                        <div class="image-caption">Original Circular saw to be adapted image 2</div>
+                                    </div>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/portfolio/thumbnails/FYP Assembly render.png" alt="Image 20" onclick="openImageModal('assets/img/portfolio/fullsize/FYP Assembly render.png')">
+                                        <div class="image-caption">Final prototype CAD RENDER</div>
+                                    </div>
+                                    
+                                    <!-- Continue with other images as needed -->
+                                </div>
+                            </div>
+                        </div>
                         <!-- Project Section 1-->
                         <div class="portfolio-item">
                             <!-- Container for Flexbox Layout -->
@@ -197,7 +335,6 @@ For a full explaination of the project as well as detailed drawings, design proc
                                 </div>
                             </div>
                         </div>
-                        
                         <!-- Project Section 2-->
                         <div class="portfolio-item">
                             <!-- Container for Flexbox Layout -->
